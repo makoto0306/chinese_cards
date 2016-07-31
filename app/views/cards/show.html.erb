@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Chinese:</strong>
+  <%= @card.chinese %>
+</p>
+
+<p>
+  <strong>Japanese:</strong>
+  <%= @card.japanese %>
+</p>
+
+<p>
+  <strong>Pinyin:</strong>
+  <%= @card.pinyin %>
+</p>
+
+<p>
+  <strong>Correct count:</strong>
+  <%= @card.correct_count %>
+</p>
+
+<p>
+  <strong>Incorrect count:</strong>
+  <%= @card.incorrect_count %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>
